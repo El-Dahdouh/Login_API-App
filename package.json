@@ -1,17 +1,25 @@
 {
-  "name": "login-app",
+  "name": "login_api-app",
   "version": "1.0.0",
+  "description": "Login_API_APP",
   "type": "module",
-  "main": "index.js",
+  "main": "Backend_API/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon Backend_Api/server.js",
-    "start": "node Backend_Api/server.js"
+    "dev": "nodemon Backend_API/server.js",
+    "start": "node Backend_API/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/El-Dahdouh/Login_API-App.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "bugs": {
+    "url": "https://github.com/El-Dahdouh/Login_API-App/issues"
+  },
+  "homepage": "https://github.com/El-Dahdouh/Login_API-App#readme",
   "dependencies": {
     "bcryptjs": "^3.0.2",
     "cookie-parser": "^1.4.7",
