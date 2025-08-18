@@ -13,10 +13,6 @@
     # copy API source code
     COPY /Backend_API ./Backend_API/  
 
-
-    # set working dir to API folder
-    WORKDIR /app/Backend_API/
-
     # expose the API port
     EXPOSE 5000
 
