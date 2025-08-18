@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="profile-container">
+    <h1>Welcome!</h1>
+    <h4>You are now logged in.</h4>
+    <button id="logoutBtn">Logout</button>
+  </div>
+
+  <script>
+    // Redirect to home page when logout is clicked
+    const logoutBtn = document.getElementById("logoutBtn");
+
+    logoutBtn.addEventListener("click", () => {
+      localStorage.clear();
+      window.location.href = "index.html";
+    });
+  </script>
+</body>
+</html>

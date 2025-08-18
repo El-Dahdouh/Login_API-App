@@ -1,0 +1,127 @@
+/* Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #e0f7fa, #f1f8e9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  transition: background 0.5s ease;
+}
+
+/* Container */
+.container, .profile-container {
+  background: #fff;
+  padding: 50px 40px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+  transform: translateY(0);
+  animation: slideIn 0.5s ease forwards;
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Headings */
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #1a1a1a;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 14px 18px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 8px rgba(74,144,226,0.3);
+  outline: none;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 12px;
+  background: #4a90e2;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #357ABD;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Links */
+p {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+p a {
+  color: #4a90e2;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+/* Profile page */
+#profileData p {
+  font-size: 16px;
+  color: #1a1a1a;
+  font-weight: 500;
+  text-align: left;
+  margin: 10px 0;
+}
+
+/* Logout button */
+#logoutBtn {
+  background: #e53935;
+}
+
+#logoutBtn:hover {
+  background: #c62828;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .container, .profile-container {
+    padding: 30px 20px;
+  }
+  h1 {
+    font-size: 26px;
+  }
+}
