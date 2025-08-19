@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api"; // Backend API URL
+const API_URL = "http://192.168.1.14:5000/api"; // Backend API URL
 
 // ===== REGISTER =====
 const registerForm = document.getElementById("registerForm");

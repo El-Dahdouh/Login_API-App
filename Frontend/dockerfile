@@ -1,0 +1,8 @@
+# import image base
+FROM nginx:alpine
+
+# copy static file into nginx
+COPY . /usr/share/nginx/html
+
+# expose port
+EXPOSE 80
