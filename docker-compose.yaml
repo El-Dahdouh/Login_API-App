@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+  backend:
+    image: a7medd3lii/login-api-app
+    container_name: API
+    ports:
+      - "5000:5000"
+    env_file:
+      - .env
+
+  frontend:
+    image: a7medd3lii/frontend-login-app
+    container_name: UI
+    ports:
+      - "8000:80"
