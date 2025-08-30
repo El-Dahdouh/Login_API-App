@@ -5,7 +5,7 @@
   "type": "module",
   "main": "Backend_API/server.js",
   "scripts": {
-    "test": "jest",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest --watchAll=false",
     "dev": "nodemon Backend_API/server.js",
     "start": "node Backend_API/server.js"
   },
