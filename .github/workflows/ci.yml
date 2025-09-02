@@ -45,8 +45,7 @@ jobs:
       - name: Build and Push Docker Image for API
         uses: docker/build-push-action@v4
         with:
-          context: ./Backend_API
-          file: ./dockerfile
+          context: .
           push: true 
           tags: a7medd3lii/login-api-app:latest
 
